@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+        integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
+        crossorigin="anonymous"></script>
+    <title>Tetris</title>
+</head>
+
+<body>
+    <div class="wrapper wrapper-opacity">
+        <div class="row m-0 mt-4 p-0">
+            <div class="col-12 m-0 p-0 text-center">
+                <h1 class="main-font main-title font-weight-light text-light">T E T R I S</h1>
+            </div>
+        </div>
+        <div class="row m-0 mt-4 p-0">
+            <div class="col-5 col-md-4 col-lg-5 m-0 p-0">
+                <div class="previous-shape text-center">
+                    <div class="row m-0 p-0">
+                        <div class="col-12 m-0 p-0 text-center">
+                            <div class="score-container">
+                                <h4 class="main-font font-weight-normal">YOUR SCORE:</h4>
+                                <h1 class="main-font" id="score">SCORE</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-0 p-0">
+                        <div class="col-12 m-0 p-0">
+                            <div class="previous-grid">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-0 p-0">
+                        <div class="col-12 m-0 p-0">
+                            <div class="lines-container">
+                                <h4 class="main-font font-weight-normal">LINES:</h4>
+                                <h2 class="main-font" id="lines">LINES</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-0 p-0">
+                    <div class="col-12 my-4 mx-0 p-0 text-center">
+                        <button id="start-button" class="main-font font-weight-light">START / PAUSE</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-7 col-md-8 col-lg-7 m-0 p-0 grid__position">
+                <div class="grid grid-opacity">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                    <div class="square block3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 my-4 p-0 keyboard-position">
+            <div class="col-12 d-block d-lg-none keyboard-display">
+                <div id="keyboard">
+                    <div class="key no-border"></div>
+                    <div id="up-key" class="key"><i class="fas fa-caret-up"></i></div>
+                    <div class="key no-border"></div>
+                    <div id="left-key" class="key"><i class="fas fa-caret-left"></i></div>
+                    <div id="down-key" class="key"><i class="fas fa-caret-down"></i></div>
+                    <div id="right-key" class="key"><i class="fas fa-caret-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="color-container">
+            <div class="row m-0 p-0">
+                <div class="col-12 m-0 p-0 text-center">
+                    <h6 class="number-font font-weight-light">Palette selected:</h6>
+                    <h6 id="selected-palette-display" class="number-font font-weight-light"></h6>
+                </div>
+            </div>
+            <div class="row m-0 ml-4 p-0" id="bright-colors">
+                <div class="col-12 m-0 my-2 p-0 color-grid d-flex">
+                    <div class="bright-color color-preview"></div>
+                    <div class="bright-color color-preview"></div>
+                    <div class="bright-color color-preview"></div>
+                    <div class="bright-color color-preview"></div>
+                    <div class="bright-color color-preview"></div>
+                </div>
+            </div>
+            <div class="row m-0 ml-4 p-0" id="pastel-colors">
+                <div class="col-12 m-0 my-2 p-0 color-grid d-flex">
+                    <div class="pastel-color color-preview"></div>
+                    <div class="pastel-color color-preview"></div>
+                    <div class="pastel-color color-preview"></div>
+                    <div class="pastel-color color-preview"></div>
+                    <div class="pastel-color color-preview"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

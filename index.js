@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayScore.innerText = 'GAME OVER';
             document.querySelector('.wrapper').classList.add('.wrapper-opacity');
             document.querySelector('.grid').classList.add('.grid-opacity');
-            document.querySelector('.previous-shape').setAttribute('style', 'height: 370px');
+            document.querySelector('.previous-shape').setAttribute('style', 'height: 285px');
             if (window.innerWidth > 688 && window.innerWidth < 992){
                 document.querySelector('.previous-shape').setAttribute('style', 'height: 510px');
             }
